@@ -26,3 +26,8 @@ CREATE TABLE bill(
     FOREIGN KEY(bill_userid) REFERENCES users(users_id) ON DELETE CASCADE,
     FOREIGN KEY(bill_gameid) REFERENCES games(games_id) ON DELETE CASCADE
 );
+
+INSERT INTO games (games_name, games_publisher, games_genre, games_price, games_publishdate) VALUES('Forza Horizon 5', 'Xbox Games Studios', 'Racing', '3499', '5 November 2021');
+INSERT INTO games (games_name, games_publisher, games_genre, games_price, games_publishdate) VALUES('Microsoft Flight Simulator 2020', 'Aerosoft', 'Simulator', '5999', '18 August 2020');
+INSERT INTO games (games_name, games_publisher, games_genre, games_price, games_publishdate) VALUES('Grand Theft Auto V', 'Rockstar Games', 'RPG', '2599', '17 September 2013');
+INSERT INTO games (games_name, games_publisher, games_genre, games_price, games_publishdate) VALUES('Fallout 76', 'Bethesda Softworks', 'Strategy', '2000', '23 October 2018');
